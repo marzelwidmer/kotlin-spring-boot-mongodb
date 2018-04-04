@@ -1,0 +1,46 @@
+GET http://localhost:8080/leaders
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-04-04T084754.200.json
+
+###
+
+
+POST http://localhost:8080/player/bob/score
+Accept: */*
+Cache-Control: no-cache
+
+30
+
+###
+
+POST http://localhost:8080/player/alice/score
+Accept: */*
+Cache-Control: no-cache
+
+30
+
+###
+
+POST http://localhost:8080/player/charlie/score
+Accept: */*
+Cache-Control: no-cache
+
+15
+
+<> 2018-04-04T084556.200.txt
+
+###
+
+
+POST http://localhost:8080/player/basco/score
+Accept: */*
+Cache-Control: no-cache
+
+80
+
+<> 2018-04-04T084704.200.txt
+<> 2018-04-04T084556.200.txt
+
+###
