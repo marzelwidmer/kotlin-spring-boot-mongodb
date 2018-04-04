@@ -1,4 +1,4 @@
-package ch.keepcalm.kotlinspringbootmongodb
+package ch.keepcalm.kotlin
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
