@@ -14,7 +14,7 @@ import kotlin.test.assertEquals
 
 @AutoConfigureMockMvc
 @RunWith(SpringRunner::class)
-@SpringBootTest
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 class PlayerServiceTest : AbstractPlayerScoreTest() {
 
     @Autowired

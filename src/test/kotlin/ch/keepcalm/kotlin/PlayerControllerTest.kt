@@ -14,8 +14,8 @@ import org.springframework.test.web.servlet.result.MockMvcResultMatchers
 
 @AutoConfigureMockMvc
 @RunWith(SpringRunner::class)
-@SpringBootTest
-class PlayerControllerTest() : AbstractPlayerScoreTest() {
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+class PlayerControllerTest : AbstractPlayerScoreTest() {
 
     @Autowired
     lateinit var mvc: MockMvc
