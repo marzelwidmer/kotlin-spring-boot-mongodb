@@ -26,7 +26,8 @@ class PlayerServiceImpl : PlayerService{
         + points
 
         // Save it
-        playerRepository.save(player)
+        val entity = playerRepository.save(player)
+        println(entity.totalScore)
         return player.totalScore
     }
 
