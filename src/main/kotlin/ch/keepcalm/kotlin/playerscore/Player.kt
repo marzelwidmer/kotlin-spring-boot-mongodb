@@ -8,7 +8,7 @@ A Player has three elements: the player’s handle (also its unique identifier),
 the total score, and the history of score events.
 Each score event is just a timestamp and the points scored.
  */
-@TypeAlias("player")
+@TypeAlias("player") // MongoDb _class name without package
 data class Player(@Id val handle: String,
                   val totalScore: Int = 0,
                   val history: List<ScoreEvent> = listOf()) {
